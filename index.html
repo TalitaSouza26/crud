@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<header>
+    <nav>
+       <h1>Sistems</h1> 
+    </nav>
+    <a href="">+ Products</a>
+    <a href="">+ Clients</a>
+    <a href="" onclick="loadOrdersPage()">+ Orders</a>
+</header>
+  
+<div class="boxProduct">
+    <div class="box">
+        
+        <input type="number" id="productId" placeholder="Enter the Id...">
+        <input type="text" id="productName" placeholder="Enter your Product...">
+        <input type="number" id="productPrice" placeholder="Enter your Value...">
+
+        <span>
+            <button onclick="addProduct()">Cadastrar</button>
+        </span>
+    </div>
+</div>
+
+
+<div class="boxClient">
+    <div class="box">
+        
+        <input type="number" id="clientId" placeholder="Enter the Id...">
+        <input type="text" id="clientName" placeholder="Enter your Name...">
+
+        <span>
+            <button onclick="addClient()">Cadastrar</button>
+        </span>
+    </div>
+
+</div>
+<div class="boxOrder" >
+    <select name="" id="clientList">
+        <!-- <option value=""></option> -->
+            </select>        
+</div>
+
+     
+<script src="./product.js"></script>
+<script src="./client.js"></script>
+<script src="./order.js"></script>
+</body>
+</html>
